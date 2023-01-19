@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational website</title>
+    <!--CSS LINK-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--NAVBAR START-->
+        <nav>
+            <div class="nav-container container">
+                <div class="nav-left-container">
+                    <a class="logo">
+                        <p>GlobalTalk</p>
+                    </a>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Textbook</a></li>
+                        <li><a href="">Statistics</a></li>
+                        <li><a href="">Game</a></li>
+                        
+
+                    </ul>
+                </div>
+                <div class="nav-right-container">
+                    <div class="user">
+                        <div class="profile">
+                          A
+                        </div>
+                        <p>Alex</p>
+                    </div>
+                    <a class="sing-out"><img src="images/sinout →.svg" alt=""></a>
+                </div>
+                   <div class="menu">
+                    <img src="images/meno.png" class="open">
+                    <img src="images/meno.png" class="close">
+                   </div>
+                
+            </div>
+        </nav>
+    <!--NAVBAR END-->
+
+    <!--HERO SECTION START-->
+      <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content-left">
+               <h5>E-COURSE PLATAFORM</h5>
+               <h1>Learning and <br>
+                 Teaching online,<br>
+                 made easy.
+            </h1>
+            <p>Practice your English and learn new things with platform.</p>
+            <a href="" class="btn">About platform</a>
+            <!--RIGHT BOTTOM-->
+            <div class="right-bottom">
+                <div class="left">
+                    <div class="top"><span><img src="images/pow.svg" alt=""></span><span>600 <small>+</small></span>
+                    </div>
+                    <span class="bottom">Popular words</span>
+                </div>
+                <div class="right">
+                    <div class="top"><span><img src="images/ex.svg" alt=""></span><span>2 <small>+</small></span>
+                    </div>
+                    <span class="bottom">mini Games</span>
+                </div>
+            </div>
+            </div>
+            <!--right content-->
+            <div class="hero-content-right">
+             <div class="game-img"><img src="images/game.svg" alt=""></div>
+             <div class="hero-img"><img src="images/hero.png" alt=""></div>
+             <div class="tree-img"><img src="images/tree.png" alt=""></div>
+            </div>
+        </div>
+      </section>
+    <!--HERO SECTION END-->
+
+    <!--language SECTION START-->
+  <section class="language">
+   <div class="container language-container">
+    <div class="language-left-cotent">
+        <img src="images/lang.png" alt="">
+    </div>
+    <div class="language-right-cotent">
+        <h1>Learn lenguage in a playful way</h1>
+        <p>Make learning words more fun  with mini-games</p>
+        <div class="card-link">
+            <a href=""><img src="images/show.png" alt=""></a>
+            <a href=""><img src="images/mc.png" alt=""></a>
+        </div>
+    </div>
+   </div>
+  </section>
+
+    <!--lenguaje SECTION END-->
+
+    <!--vocabulary SECTION START-->
+    <section class="vocabulary">
+        <div class="container vocabulary-container">
+            <div class="vocabulary-left-content">
+                <h1>Increase vocabulary</h1>
+                <p>Traditional and new effective approaches  the word study</p>
+                <a href="" class="btn">Textbook</a>
+            </div>
+            <div class="vocabulary-right-content">
+                <img src="images/voca.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!--vocabulary SECTION END-->
+     
+    <!--progress SECTION START-->
+     <section class="progress">
+        <div class="container progress-container">
+            <div class="progress-left-content">
+                <img src="images/progg.png" alt="">
+            </div>
+            <div class="progress-right-content">
+                <h1>Wath your progress every day </h1>
+                <p>Save statics on achivements,words leardned, and  mistakes</p>
+                <a href="" class="btn">Stactitcs</a>
+            </div>
+        </div>
+     </section>
+    <!--progress SECTION END-->
+
+    <!--footer SECTION START-->
+  <footer>
+    <div class="container footer-container">
+        <div class="footer-top">
+            <div class="link-left">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Textbook</a></li>
+                    <li><a href="">Statistics</a></li>
+                    <li><a href="">call</a></li>
+                    
+    
+                </ul>
+    
+                
+            </div>
+            
+            <div class="link-right">
+                <ul>
+                    <li><a href="">beg jocker</a></li>
+                    <li><a href="">ber dev</a></li>
+                    
+                    
+    
+                </ul>
+                
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="link-left">
+                <a href=""><img src="images/git.svg" alt=""></a>
+                <a href=""><img src="images/gt.svg" alt=""></a>
+                <a href=""><img src="images/youtube.svg" alt=""></a>
+            </div>
+            <div class="link-right">
+                <p>2023 GlobalTalk.Projet <span>GlobalTalk</span> </p>
+            </div>
+        </div>
+    </div>
+  </footer>
+    <!--footer SECTION END-->
+
+     <!--SCRIPT-->
+     <script>
+        window.addEventListener('scroll',()=>{
+            document.querySelector('nav').classList.toggle('nav-shadow',scrollY<0);
+
+           
+        })
+
+        document.querySelector('.open').addEventListener('click',()=>{
+                document.querySelector('ul').style.right='0'
+                document.querySelector('.open').style.display='none'
+                document.querySelector('.close').style.display='block'
+            })
+
+            document.querySelector('.close').addEventListener('click',()=>{
+                document.querySelector('ul').style.right='-250px'
+                document.querySelector('.open').style.display='block'
+                document.querySelector('.close').style.display='none'
+            })
+     </script>
+
+</body>
+</html>
